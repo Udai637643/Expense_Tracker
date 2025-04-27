@@ -1,164 +1,179 @@
-# Expense Tracker Application
+# 💰 Expense Tracker
 
-## Project Overview
-The **Expense Tracker Application** is a full-stack web application designed to allow users to record, edit, delete, and visualize their expenses. The application provides a user-friendly interface and allows users to track their spending patterns through interactive charts and graphs.
+A full-stack expense tracker application built using **React (Frontend)** and **Node.js + Express (Backend)**. It allows users to record, edit, delete, and visualize their expenses, providing insights into their spending patterns.
 
-### Features:
-- Add, edit, and delete expense records.
-- Visualize expenses through various charts.
-- Responsive and intuitive user interface.
-- Clean and maintainable code structure.
-- (Optional) User authentication for multiple users.
+## 📁 Project Structure
+ExpenseTracker/ ├── backend/ │ ├── controllers/ │ ├── models/ │ ├── routes/ │ └── server.js └── frontend/ ├── public/ └── src/
 
----
-
-## Technology Stack
-
-- **Frontend**: React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB or PostgreSQL
-- **Visualization**: Chart.js (for rendering charts)
-- **Authentication** (Optional): JWT (JSON Web Token)
+yaml
+Copy
+Edit
 
 ---
 
-## Requirements
+## 🚀 Backend (Node.js + Express)
 
-### Backend
-The backend is built using **Node.js** and **Express.js** to handle API requests. The backend exposes the following endpoints:
+### 🔌 Server
+- Runs on: `http://localhost:5000`
+- Located at: `backend/server.js`
 
-- **POST /expenses**: Add a new expense.
-- **GET /expenses**: Retrieve all expenses.
-- **PUT /expenses/:id**: Update an existing expense.
-- **DELETE /expenses/:id**: Delete an expense.
+### 📦 Routes
 
-### Frontend
-The frontend is built with **React.js** and is designed to be fully responsive. It includes:
+#### 1. **GET /api/expenses**
+- **Purpose:** Fetch all expenses.
+- **Returns:** Array of expense objects `{ id, amount, category, description, date }`
+- **Example Response:**
+```json
+[
+  {
+    "id": 1,
+    "amount": 50,
+    "category": "Food",
+    "description": "Lunch",
+    "date": "2023-04-27T14:30:00Z"
+  },
+  ...
+]
+2. POST /api/expenses
+Purpose: Add a new expense.
 
-- A form to add and edit expense records.
-- A list to display expenses with options to edit or delete.
-- A dashboard to visualize expenses (pie chart for category distribution, bar chart for monthly expenses).
+Request Body:
 
-### Database
-The application uses **MongoDB** (or **PostgreSQL**) to store expense data. Each expense record includes the following fields:
+json
+Copy
+Edit
+{
+  "amount": 50,
+  "category": "Food",
+  "description": "Lunch",
+  "date": "2023-04-27T14:30:00Z"
+}
+Response:
 
-- **ID**: Unique identifier for each expense record.
-- **Amount**: Amount of the expense.
-- **Category**: Category of the expense (e.g., food, transportation, etc.).
-- **Description**: A brief description of the expense.
-- **Date**: The date when the expense was incurred.
+json
+Copy
+Edit
+{ "message": "Expense added successfully!" }
+3. PUT /api/expenses/:id
+Purpose: Update an existing expense.
 
----
+Request Body:
 
-## Project Setup
+json
+Copy
+Edit
+{
+  "amount": 60,
+  "category": "Food",
+  "description": "Dinner",
+  "date": "2023-04-27T18:30:00Z"
+}
+Response:
 
-### Backend Setup
+json
+Copy
+Edit
+{ "message": "Expense updated successfully!" }
+4. DELETE /api/expenses/:id
+Purpose: Delete an expense.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/expense-tracker.git
-   cd expense-tracker/backend
-Install dependencies:
+Response:
 
+json
+Copy
+Edit
+{ "message": "Expense deleted successfully!" }
+🎨 Frontend (React + Tailwind CSS)
+📦 Pages
+1. Home Page (/)
+Displays a list of all expenses.
+
+Each expense shows: amount, category, description, date, and options to edit or delete.
+
+2. Add Expense Page (/add)
+A form to add a new expense with fields for amount, category, description, and date.
+
+3. Dashboard Page (/dashboard)
+Displays charts (e.g., pie chart for category distribution, bar chart for monthly expenses).
+
+📦 Components
+ExpenseCard: Displays individual expense details and handles edit/delete.
+
+AddExpenseForm: Form for adding new expenses.
+
+Header: Navigation bar with links to Home, Add Expense, and Dashboard.
+
+🧠 Hooks
+useExpenses.js: Custom hook for managing expense data and interactions with the backend.
+
+useChartData.js: Custom hook for generating data required for the visualizations.
+
+💻 Getting Started
+1. Clone the repo
 bash
 Copy
 Edit
+git clone https://github.com/Udai637643/ExpenseTracker.git
+cd ExpenseTracker
+2. Install backend dependencies
+bash
+Copy
+Edit
+cd backend
 npm install
-Set up environment variables for MongoDB (or PostgreSQL). Create a .env file in the backend folder with the following content:
-
-ini
-Copy
-Edit
-DB_URI=your-database-uri
-PORT=5000
-Start the backend server:
-
-bash
-Copy
-Edit
-npm start
-Frontend Setup
-Navigate to the frontend directory:
-
+3. Install frontend dependencies
 bash
 Copy
 Edit
 cd ../frontend
-Install dependencies:
-
-bash
-Copy
-Edit
 npm install
-Start the frontend server:
-
+4. Run the apps
+Start Backend
 bash
 Copy
 Edit
+cd ../backend
+node server.js
+Start Frontend
+bash
+Copy
+Edit
+cd ../frontend
 npm start
-The application should now be running on http://localhost:3000.
-
-Usage
-Open the frontend application in your browser (e.g., http://localhost:3000).
-
-You can:
-
-Add an expense by filling out the form and clicking the "Add Expense" button.
-
-Edit an expense by clicking the "Edit" button next to an expense.
-
-Delete an expense by clicking the "Delete" button next to an expense.
-
-View the dashboard to see visualizations of your expenses by category and month.
-
-Screenshots
-Here are some screenshots of the application in action:
-
-Dashboard
-
-Add Expense Form
-
-Expense List
-
-Optional Features
-User Authentication: Implement JWT-based authentication to allow multiple users to track their expenses separately.
-
-Data Export: Provide users with the ability to export their expenses as CSV or PDF files.
-
-Evaluation Criteria
-Code Quality: Adherence to coding standards, clean and modular architecture.
-
-Functionality: Implementation of all required features (Add, Edit, Delete, Visualize).
-
-User Experience: Design and usability of the frontend interface.
-
-Visualization: Clear and accurate representation of expense data in charts.
-
-Bonus Points: Implementation of user authentication or other innovative features.
-
-Installation and Running
-To run the full project on your local machine:
-
-Clone the repository:
-
-bash
+📄 .gitignore (Sample)
+gitignore
 Copy
 Edit
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
-Set up the backend and frontend following the setup instructions provided earlier.
+# Ignore node_modules
+frontend/node_modules/
+backend/node_modules/
 
-Run both the backend and frontend servers.
+# Ignore env and build
+.env
+frontend/build/
+backend/dist/
+✅ Features
+Add, edit, and delete expense records.
 
-Backend: http://localhost:5000
+View expenses in a list and visualize data via charts.
 
-Frontend: http://localhost:3000
+Responsive and user-friendly interface built with React and Tailwind CSS.
+
+Backend API to manage expense data (Node.js + Express).
+
+MongoDB for storing expenses.
+
+ScreenShots
 
 
+👨‍💻 Author
+Udai Lal Regar
+LinkedIn | GitHub
 
-Acknowledgements
-Chart.js: For rendering interactive and responsive charts.
+rust
+Copy
+Edit
 
-React.js: For building the frontend interface.
-
-Node.js: For creating the backend API.
+### Notes:
+- Replace the placeholders for screenshot links (`https://github.com/user-attachments/assets/expense-list.png`) with the actual URLs for the images you uploaded.
+- Update the repository URL (`https://github.com/Udai637643/ExpenseTracker.git`) with your actual GitHub repository link.
