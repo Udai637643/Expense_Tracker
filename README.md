@@ -230,8 +230,14 @@ backend/dist/
 
 ## 📸 ScreenShots
 
-![Expense List](https://github.com/user-attachments/assets/expense-list.png)
-![Dashboard](https://github.com/user-attachments/assets/dashboard.png)
+![image](https://github.com/user-attachments/assets/dda64e79-dd10-45e9-9985-299a5ddeac29)
+![image](https://github.com/user-attachments/assets/4946c71f-3f4a-4b8c-984b-c0f0e4164e69)
+![image](https://github.com/user-attachments/assets/4e41a8bb-ee94-41a7-8dc4-941f0f9669e0)
+![image](https://github.com/user-attachments/assets/5c6b28e6-d07d-44f6-9d7a-8f8de2a94d48)
+![image](https://github.com/user-attachments/assets/a2028b04-c9d9-4879-bd1c-ef75237e4774)
+
+
+
 
 ---
 
