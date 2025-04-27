@@ -32,10 +32,10 @@ Response:
 
 
 { "message": "Expense added successfully!" }
-#### 2. PUT /api/expenses/:id
-Purpose: Update an existing expense.
+#### 2. **PUT /api/expenses/:id**
+- **Purpose:** Update an existing expense.
 
-Request Body:
+- **Request Body:**
 
 {
   "amount": 60,
@@ -47,41 +47,41 @@ Response:
 
 { "message": "Expense updated successfully!" }
 
-#### 3. DELETE /api/expenses/:id
-Purpose: Delete an expense.
+#### 3. **DELETE /api/expenses/:id**
+**Purpose:** Delete an expense.
 
-Response:
+**Response:**
 
 
 
 { "message": "Expense deleted successfully!" }
-🎨 Frontend (React + Tailwind CSS)
-📦 Pages
+### 🎨 Frontend (React + Tailwind CSS)
+### 📦 Pages
 #### 1. Home Page (/)
 Displays a list of all expenses.
 
 Each expense shows: amount, category, description, date, and options to edit or delete.
 
-#### 2. Add Expense Page (/add)
+#### 2. ** Add Expense Page (/add)**
 A form to add a new expense with fields for amount, category, description, and date.
 
-#### 3. Dashboard Page (/dashboard)
+#### 3. **Dashboard Page (/dashboard)**
 Displays charts (e.g., pie chart for category distribution, bar chart for monthly expenses).
 
-📦 Components
+### 📦 Components
 ExpenseCard: Displays individual expense details and handles edit/delete.
 
 AddExpenseForm: Form for adding new expenses.
 
 Header: Navigation bar with links to Home, Add Expense, and Dashboard.
 
-🧠 Hooks
+### 🧠 Hooks
 useExpenses.js: Custom hook for managing expense data and interactions with the backend.
 
 useChartData.js: Custom hook for generating data required for the visualizations.
 
-💻 Getting Started
-#### 1. Clone the repo
+### 💻 Getting Started
+#### 1. **Clone the repo**
 
 git clone https://github.com/Udai637643/ExpenseTracker.git
 cd ExpenseTracker
