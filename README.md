@@ -20,42 +20,23 @@ Edit
 
 ### 📦 Routes
 
-#### 1. **GET /api/expenses**
-- **Purpose:** Fetch all expenses.
-- **Returns:** Array of expense objects `{ id, amount, category, description, date }`
-- **Example Response:**
+#### 1. **POST /api/expenses**
+- **Purpose:** Add a new expense.
+- **Request Body:**
   ```json
-  [
-    {
-      "id": 1,
-      "amount": 50,
-      "category": "Food",
-      "description": "Lunch",
-      "date": "2023-04-27T14:30:00Z"
-    },
-    ...
-  ]
-2. POST /api/expenses
-Purpose: Add a new expense.
-
-Request Body:
-
-json
-Copy
-Edit
-{
-  "amount": 50,
-  "category": "Food",
-  "description": "Lunch",
-  "date": "2023-04-27T14:30:00Z"
-}
+  {
+    "amount": 50,
+    "category": "Food",
+    "description": "Lunch",
+    "date": "2023-04-27T14:30:00Z"
+  }
 Response:
 
 json
 Copy
 Edit
 { "message": "Expense added successfully!" }
-3. PUT /api/expenses/:id
+2. PUT /api/expenses/:id
 Purpose: Update an existing expense.
 
 Request Body:
@@ -75,7 +56,7 @@ json
 Copy
 Edit
 { "message": "Expense updated successfully!" }
-4. DELETE /api/expenses/:id
+3. DELETE /api/expenses/:id
 Purpose: Delete an expense.
 
 Response:
@@ -167,16 +148,3 @@ MongoDB for storing expenses.
 ScreenShots
 
 
-👨‍💻 Author
-Udai Lal Regar
-LinkedIn | GitHub
-
-markdown
-Copy
-Edit
-
-### Notes:
-1. **Replace the screenshot URLs** (`https://github.com/user-attachments/assets/expense-list.png`) with actual URLs where you have uploaded your screenshots.
-2. **Update the repository link** (`https://github.com/Udai637643/ExpenseTracker.git`) with your actual GitHub repository link.
-
-This should now be correctly formatted and aligned with your project.
