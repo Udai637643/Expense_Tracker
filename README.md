@@ -28,7 +28,7 @@ ExpenseTracker/ ├── backend/ │ ├── controllers/ │ ├── mode
     "description": "Lunch",
     "date": "2023-04-27T14:30:00Z"
   }
-Response:
+- **Response:**
 ```json
 { "message": "Expense added successfully!" }
 
