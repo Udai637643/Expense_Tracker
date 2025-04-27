@@ -29,21 +29,21 @@ ExpenseTracker/ ├── backend/ │ ├── controllers/ │ ├── mode
     "date": "2023-04-27T14:30:00Z"
   }
 Response:
-
-
 { "message": "Expense added successfully!" }
 #### 2. **PUT /api/expenses/:id**
 - **Purpose:** Update an existing expense.
 
 - **Request Body:**
 
+  ```json
 {
   "amount": 60,
   "category": "Food",
   "description": "Dinner",
   "date": "2023-04-27T18:30:00Z"
 }
-Response:
+
+**Response:**
 
 { "message": "Expense updated successfully!" }
 
@@ -51,9 +51,6 @@ Response:
 **Purpose:** Delete an expense.
 
 **Response:**
-
-
-
 { "message": "Expense deleted successfully!" }
 ### 🎨 Frontend (React + Tailwind CSS)
 ### 📦 Pages
