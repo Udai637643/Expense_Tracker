@@ -3,6 +3,7 @@
 A full-stack expense tracker application built using **React (Frontend)** and **Node.js + Express (Backend)**. It allows users to record, edit, delete, and visualize their expenses, providing insights into their spending patterns.
 
 ## 📁 Project Structure
+
 ExpenseTracker/ ├── backend/ │ ├── controllers/ │ ├── models/ │ ├── routes/ │ └── server.js └── frontend/ ├── public/ └── src/
 
 yaml
@@ -23,17 +24,17 @@ Edit
 - **Purpose:** Fetch all expenses.
 - **Returns:** Array of expense objects `{ id, amount, category, description, date }`
 - **Example Response:**
-```json
-[
-  {
-    "id": 1,
-    "amount": 50,
-    "category": "Food",
-    "description": "Lunch",
-    "date": "2023-04-27T14:30:00Z"
-  },
-  ...
-]
+  ```json
+  [
+    {
+      "id": 1,
+      "amount": 50,
+      "category": "Food",
+      "description": "Lunch",
+      "date": "2023-04-27T14:30:00Z"
+    },
+    ...
+  ]
 2. POST /api/expenses
 Purpose: Add a new expense.
 
@@ -170,10 +171,12 @@ ScreenShots
 Udai Lal Regar
 LinkedIn | GitHub
 
-rust
+markdown
 Copy
 Edit
 
 ### Notes:
-- Replace the placeholders for screenshot links (`https://github.com/user-attachments/assets/expense-list.png`) with the actual URLs for the images you uploaded.
-- Update the repository URL (`https://github.com/Udai637643/ExpenseTracker.git`) with your actual GitHub repository link.
+1. **Replace the screenshot URLs** (`https://github.com/user-attachments/assets/expense-list.png`) with actual URLs where you have uploaded your screenshots.
+2. **Update the repository link** (`https://github.com/Udai637643/ExpenseTracker.git`) with your actual GitHub repository link.
+
+This should now be correctly formatted and aligned with your project.
