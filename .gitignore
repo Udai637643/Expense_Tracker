@@ -1,0 +1,72 @@
+# Ignore node_modules in both frontend and backend
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore build/dist folders
+backend/build/
+backend/dist/
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/.expo/
+frontend/.turbo/
+
+# Ignore environment files (sensitive keys)
+backend/.env
+frontend/.env
+backend/.env.local
+frontend/.env.local
+backend/.env.development.local
+frontend/.env.development.local
+backend/.env.production.local
+frontend/.env.production.local
+
+# Ignore logs
+*.log
+logs/
+backend/logs/
+frontend/logs/
+
+# Ignore coverage reports (testing)
+coverage/
+frontend/coverage/
+backend/coverage/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# Temporary files
+temp/
+tmp/
+
+# Database files (if any)
+*.sqlite
+*.db
+*.db3
+*.bak
+
+# Misc
+*.tgz
+*.tar.gz
+*.zip
+*.swp
+
+# Docker (optional)
+docker-compose.override.yml
+.docker/
+
+# Firebase/Amplify (optional if used)
+.firebase/
+amplify/
+
+# Storybook (optional)
+.storybook/
+
+# ESLint and Prettier caches
+.eslintcache
+.prettiercache
