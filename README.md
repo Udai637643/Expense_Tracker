@@ -4,22 +4,8 @@
 
 A full-stack expense tracker application built using **React (Frontend)** and **Node.js + Express (Backend)**. It allows users to record, edit, delete, and visualize their expenses, providing insights into their spending patterns.
 
-## 📁 Project Structure
-
-```
-ExpenseTracker/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── server.js
-└── frontend/
-    ├── public/
-    └── src/
-```
 
 ---
-
 ## 🚀 Backend (Node.js + Express)
 
 ### 🔌 Server
