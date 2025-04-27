@@ -245,4 +245,3 @@ backend/dist/
 
 Udai Lal Regar  
 [LicdnkedIn](https://linkedin.com/in/udai-lal-regar-144806240) | [GitHub](https://github.com/udai637643)
-```
