@@ -30,24 +30,26 @@ ExpenseTracker/ ├── backend/ │ ├── controllers/ │ ├── mode
   }
 Response:
 { "message": "Expense added successfully!" }
-#### 2. **PUT /api/expenses/:id**
-- **Purpose:** Update an existing expense.
 
-- **Request Body:**
+### 2. **GET /api/expenses**
+- **Purpose:** Retrieve all expenses.
 
-  ```json
-{
-  "amount": 60,
-  "category": "Food",
-  "description": "Dinner",
-  "date": "2023-04-27T18:30:00Z"
-}
-
-**Response:**
-
+- **Response:**
+```json
+[
+  {
+    "id": "1",
+    "amount": 50,
+    "category": "Food",
+    "description": "Lunch",
+    "date": "2023-04-27T14:30:00Z"
+  },
+  ...
+]
+Response:
 { "message": "Expense updated successfully!" }
 
-#### 3. **DELETE /api/expenses/:id**
+### 3. **DELETE /api/expenses/:id**
 **Purpose:** Delete an expense.
 
 **Response:**
