@@ -173,9 +173,3 @@ Udai Lal Regar
 ```
 
 ---
-
-### Notes:
-1. **Replace the screenshot URLs** (`https://github.com/user-attachments/assets/expense-list.png`) with actual URLs where you have uploaded your screenshots.
-2. **Update the repository link** (`https://github.com/Udai637643/ExpenseTracker.git`) with your actual GitHub repository link.
-
-This should be well-formatted and easy to use, displaying all the necessary backend and frontend information for your project.
