@@ -1,6 +1,5 @@
-Here’s the full README in the format you requested, with a structured breakdown of both the backend and frontend components:
 
-```markdown
+
 # 💰 Expense Tracker
 
 A full-stack expense tracker application built using **React (Frontend)** and **Node.js + Express (Backend)**. It allows users to record, edit, delete, and visualize their expenses, providing insights into their spending patterns.
